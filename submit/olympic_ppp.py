@@ -11,12 +11,15 @@ def calculate_medal(medal_dict: dict, country: str, medal: str) -> dict:
     if country not in medal_dict:
         medal_dict[country] = {"금메달": 0, "은메달": 0, "동메달": 0}
 
-    if medal in medal_dict[country]:
-        medal_dict[country][medal] += 1
-    else:
-        print(f"알 수 없는 메달 종류 '{medal}'을 무시합니다.")
+
+    
+    medal_dict[country][medal] += 1
+    
+
 
     return medal_dict
+
+
 
 
 def display_progress(medal_data):
@@ -50,6 +53,7 @@ medal_data = [
     ("중국", "은메달"),
     ("한국", "동메달"),
 ]
+
 
 medal_dict = display_progress(medal_data)
 sentences = print_medals(medal_dict)
