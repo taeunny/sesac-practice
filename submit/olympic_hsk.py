@@ -10,7 +10,7 @@ def calculate_medal(medal_dict: dict, country: str, medal: str) -> dict:
     """
     if country not in medal_dict:
         medal_dict[country] = {"금메달": 0, "은메달": 0, "동메달": 0}
-        medal_dict[co]
+        medal_dict[country][medal]
 
     # medal_dict
     # {"한국": {"금메달":0, "은메달": 0, "동메달": 0}}
