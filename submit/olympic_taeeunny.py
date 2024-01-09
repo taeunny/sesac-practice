@@ -13,8 +13,6 @@ def calculate_medal(medal_dict: dict, country: str, medal: str) -> dict:
 
     # 메달을 집계하는 코드작성
     medal_dict[country][medal] += 1
-    
-
     return medal_dict
 
 
