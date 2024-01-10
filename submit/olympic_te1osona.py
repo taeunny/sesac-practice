@@ -1,6 +1,6 @@
 import re
 
-# message to make a pull request
+# message for pull request
 
 
 def calculate_medal(medal_dict: dict, country: str, medal: str) -> dict:
